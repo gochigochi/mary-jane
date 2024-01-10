@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rock+Salt&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+  /* GLOBALS */
+  --section-max-width: 78rem;
+  --section-width: 90%;
+  --section-mobile-width: 95%;
+  --section-min-height: 30rem;
+
+  --desktop-section-padding: 5rem;
+  --mobile-section-padding: 3rem;
+  --desktop-title-font-size: 2.5rem;
+
+  --text-color: #1E411D;
+  --green: #93C244;
+  --green-hover: #5c772d;
+  --pink: #e27baf;
+  --pink-hover: #7f4361;
+  --bg-color: #F7F7F7;
+  --black: #1E1E1E;
+  --gray-blue: #435a65;
+  --gray-blue-hover: #1e2c33;
+
+
+  --dark-green: #1e411d;
+  --middle-green: #87AF55;
+  --light-green: #93c244;
+  --alt-light-green: #8AA489;
+  --light-blue: #c7e1e0;
+  --light-blue-hover: #778888;
+  --soft-gray: #e4e4e4;
+  --clear-gray: #D9D9D9;
+  --gray: #aeaeae;
+  --bg-gray: #ECEDED;
+  --alert: #FF3838;
+
+  --soft-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: .7;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+span {
+  color: var(--text-color);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+/* SWIPERS */
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #93c244 !important;
+}
+
+/* Image gallery */
+.instaGallerySwyper.swiper {
+  width: 25rem;
+  height: 30rem;
+}
+
+@media all and (max-width: 650px) {
+  .instaGallerySwyper.swiper {
+    width: 18rem;
+    height: 23rem;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .instaGallerySwyper.swiper {
+    width: 28rem;
+    height: 33rem;
+  }
+}
+
+.mediaReviewSwyper {
+  position: relative;
+  bottom: 1rem;
+}
+
+.mediaReviewSwyper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.mediaReviewSwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.mediaReviewSwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+.exhibitorsSwiper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.exhibitorsSwiper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+  transition-timing-function: linear !important;
+}
+
+.exhibitorsSwiper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+@media all and (max-width: 400px) {
+
+  .exhibitorsSwiper .swiper-slide {
+    width: 7rem;
+  }
+}
+
+.reviewSwyper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.reviewSwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.reviewSwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+.reviewSwyper .swiper-slide p {
+  font-size: .8rem !important;
+}
+
+@media all and (max-width: 500px) {
+  .reviewSwyper .swiper-slide p {
+    font-size: 8px !important;
+  }
+}
+
+/*  */
+.speakersSwyper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.speakersSwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.speakersSwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/*  */
+.imageGallerySwyper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+@media all and (max-width: 400px) {
+  .imageGallerySwyper.swiper {
+    padding: 0;
+  }
+}
+
+.imageGallerySwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.imageGallerySwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+/* EXHIBITION PAGE SWIPERS */
+.locationPicsSwyper.swiper {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+.locationPicsSwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.locationPicsSwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+/* SPONSORING SWIPER */
+.sponsoringSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.sponsoringSwiper .swiper-pagination-bullets span {
+  background-color: #fff !important;
+}
+
+.foyerSponsoringSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.foyerSponsoringSwiper .swiper-pagination-bullets span {
+  background-color: #fff !important;
+}
+
+/* FURNITURE ADN HOSTESSES */
+.furnitureSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.furnitureSwiper .swiper-pagination-bullets span {
+  background-color: #fff !important;
+}
+
+/* ACCOMODATION PAGE */
+.accomodationSwyper.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.accomodationSwyper .swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.accomodationSwyper .swiper-slide {
+  width: auto;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+/* JOURNEY */
+.journeySwiper .swiper-wrapper {
+  right: 24.5rem;
+}

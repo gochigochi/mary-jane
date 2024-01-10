@@ -1,0 +1,27 @@
+/* Gral */
+.features-bold {
+    font-weight: bold;
+}
+
+/* EN */
+.date {
+    color: #ffffff;
+}
+
+.month {
+    color: var(--green);
+}
+
+.year {
+    color: var(--green);
+}
+
+.subtitle {
+    color: #ffffff;
+}
+
+.subtitle-span {
+    color: var(--pink);
+}
+
+/* DE */
